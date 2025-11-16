@@ -2,29 +2,40 @@ import java.util.Scanner;
 
 public class Reverse_Name {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
+        
+        Scanner userInput = new Scanner (System.in);
 
-            Scanner userInput = new Scanner(System.in);
+        System.out.println("Enter your first name");
 
-            System.out.println("Enter your name");
+        String firstName = userInput.next();
 
-            String name = userInput.next();
+        System.out.println("Enter your last name");
 
-            String reverseName = new StringBuilder(name).reverse().toString();
+        String lastName = userInput.next();
 
-            //Pass arguments
+        //reverse first name
 
-            String nameCapital = capitaliseFirstLetter(name);
-            String reverseCapital = capitaliseFirstLetter(reverseName);
+        String reverseName1 = new StringBuilder(firstName).reverse().toString();
+        String reverseName2 = new StringBuilder(lastName).reverse().toString();
 
-            //Print names
+        //pass arguments for capital letter
 
-            System.out.println("Hello " + nameCapital + " your name in reverse is " + reverseCapital);
-        }
+        String capitalFirstName = firstLetterCapitalise(firstName);
+        String capitalLastName = firstLetterCapitalise(lastName);
+        String capitalReverseName = firstLetterCapitalise(reverseName1);
+        String capitalReverseName2 = firstLetterCapitalise(reverseName2);
 
+        //print
 
-        public static String capitaliseFirstLetter(String str) {
-
-            return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
-        }
+        System.out.println("Hello " + capitalFirstName + " " + capitalLastName +
+                " or shall I say " + capitalReverseName + " " + capitalReverseName2
+                + " ahahaha!!!");
     }
+
+
+    public static String firstLetterCapitalise (String str) {
+
+        return str.substring(0,1).toUpperCase() + str.substring(1).toLowerCase();
+    }
+}
