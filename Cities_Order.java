@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Cities_Order {
 
     public static void main(String[] args) {
-        
+
         Scanner userInput = new Scanner(System.in);
 
         System.out.println("Enter a city : ");
