@@ -5,7 +5,7 @@ public class Find_ASCII {
     public static void main(String[] args) {
 
         Scanner userInput = new Scanner (System.in);
-        
+
         System.out.println("Get an ASCII from a character");
         System.out.println("\nEnter a character : ");
 
