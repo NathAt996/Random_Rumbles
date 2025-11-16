@@ -9,7 +9,7 @@ public class Palindrome_Detector {
 
         System.out.println("Enter a word. Lets test if it is a palindrome!");
         String word = userInput.nextLine();
-        
+
         int start = 0;
         int end = word.length()-1;
         boolean isPalindrome = true;
