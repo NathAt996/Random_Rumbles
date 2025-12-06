@@ -11,7 +11,6 @@ public abstract class Employee {
     }
 
     public abstract double calculateWeeklyPay();
-    //annual salary / 52 weeks
 
     public String getName() {
         return name;
