@@ -1,3 +1,5 @@
+package Single_Class_Programs;
+
 import java.util.Locale;
 import java.util.Scanner;
 

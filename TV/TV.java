@@ -1,3 +1,5 @@
+package TV;
+
 public class TV {
 
     public int channel = 1;
@@ -13,12 +15,12 @@ public class TV {
     public void turnOn() {
 
         on = true;
-        System.out.println("TV is ON.");
+        System.out.println("TV.TV is ON.");
     }
 
     public void turnOff() {
         on = false;
-        System.out.println("TV is now OFF.");
+        System.out.println("TV.TV is now OFF.");
     }
 
     public void setChannel(int newChannel) {
@@ -28,7 +30,7 @@ public class TV {
         }
 
         else if (!on) {
-            System.out.println("Cannot change channel, TV is off.");
+            System.out.println("Cannot change channel, TV.TV is off.");
         }
 
         else {
@@ -43,7 +45,7 @@ public class TV {
         }
 
         else if (!on) {
-            System.out.println("Cannot change volume, TV is off.");
+            System.out.println("Cannot change volume, TV.TV is off.");
         }
 
         else {

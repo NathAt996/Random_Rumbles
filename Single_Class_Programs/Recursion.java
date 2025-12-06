@@ -1,3 +1,5 @@
+package Single_Class_Programs;
+
 public class Recursion {
 
     //Simple recursion program to help with my learning

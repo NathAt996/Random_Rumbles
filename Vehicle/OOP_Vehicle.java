@@ -1,3 +1,5 @@
+package Vehicle;
+
 public class OOP_Vehicle {
 
     public static void main(String[] args) {

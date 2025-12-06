@@ -1,3 +1,5 @@
+package Vehicle;
+
 public class Car2 extends Vehicle {
 
     //Call to superclass constructor

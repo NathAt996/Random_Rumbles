@@ -1,3 +1,5 @@
+package Vehicle;
+
 abstract class Vehicle {
 
     //Data fields
@@ -29,7 +31,7 @@ abstract class Vehicle {
         return year;
     }
 
-    //Concrete class to display Vehicle methods
+    //Concrete class to display Vehicle.Vehicle methods
 
     public void displayInfo() {
         System.out.println("Brand:" + brand

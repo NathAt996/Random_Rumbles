@@ -1,3 +1,5 @@
+package TV;
+
 import java.util.Scanner;
 
 public class Test_TV {
@@ -8,7 +10,7 @@ public class Test_TV {
 
         TV television = new TV ();
 
-        System.out.println("Do you want to keep the TV on? " +
+        System.out.println("Do you want to keep the TV.TV on? " +
                 "\n1 = Yes" +
                 "\n2 = No");
 
