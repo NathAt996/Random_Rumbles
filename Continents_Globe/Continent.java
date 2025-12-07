@@ -23,6 +23,10 @@ public class Continent implements Continent_Interface {
         System.out.println("Number of languages in " + name + ": " + numberOfLanguages);
         System.out.println("Number of countries in " + name + ": " + numberOfCountries);
         System.out.println("Is " + name + " still officially recognised as a continent by the UN? " + isContinent);
+
+        if(!isContinent) {
+            System.out.println(name + " is not officially recognised as a continent");
+        }
     }
 
     @Override
@@ -47,9 +51,6 @@ public class Continent implements Continent_Interface {
 
     @Override
     public boolean isContinent() {
-        if(isContinent == false) {
-            System.out.println(name + "is not recognised as a continent");
-        }
-        return false;
+        return isContinent;
     }
 }
