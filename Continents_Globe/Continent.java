@@ -48,7 +48,7 @@ public class Continent implements Continent_Interface {
     @Override
     public boolean isContinent() {
         if(isContinent == false) {
-            System.out.println("is not recognised as a continent");
+            System.out.println(name + "is not recognised as a continent");
         }
         return false;
     }
