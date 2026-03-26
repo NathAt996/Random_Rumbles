@@ -8,24 +8,21 @@ public class PhenotypeMain {
 
         ArrayList<Animal> animals = new ArrayList<>();
 
-        animals.add(new Animal("Bird", 2));
-        animals.add(new Animal("Fish", 0));
-        animals.add(new Animal("Unicorn", 2));
-        animals.add(new Animal("Otter", 0));
+        animals.add(new Voltant_Animal("Bird", 2));
+        animals.add(new Animal("Otter"));
+        animals.add(new Voltant_Animal("Unicorn", 2));
 
-        for(Animal a : animals) {
+        for (Animal a : animals) {
             System.out.println("Species: " + a.getSpecies());
-            System.out.println("Wing count: " + a.getWingCount());
 
-            if(a.getWingCount() <= 0) {
-                System.out.println(a.getSpecies() + " can't fly :-(");
-                System.out.println();
+            if (a instanceof Flyable flyer) {
+                flyer.fly();
             }
 
             else {
-                a.fly();
-                System.out.println();
+                System.out.println(a.getSpecies() + " can't fly :-(");
             }
+            System.out.println();
         }
     }
 }
